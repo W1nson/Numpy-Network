@@ -65,6 +65,8 @@ class layers:
             self.actuation()
             return self.output
 
+        
+        #need to work on backpropagation()
     def backpropagation(self, target, count):
          #error detection
         self.error = (1/2) * np.square(target - self.data)
